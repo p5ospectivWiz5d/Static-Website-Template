@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Image Container -->
+  <div class="relative h-screen">
+    <img src="https://picsum.photos/id/10/2500/1667" alt="Background Image" class="w-full h-full object-cover scroll-opacity">
+    <!-- Navbar -->
+    <nav class="absolute top-4 left-4 right-4 bg-opacity-75 bg-black text-white p-4 rounded-md">
+      <ul class="flex space-x-4">
+        <li><a href="#" class="hover:underline">Home</a></li>
+        <li><a href="#" class="hover:underline">About</a></li>
+        <li><a href="#" class="hover:underline">Services</a></li>
+        <li><a href="#" class="hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Content to replace the image -->
+    <div class="h-screen content-container text-white text-2xl font-bold bg-gray-300 bg-opacity-50">
+      Scroll down to see the opacity effect on the image.
+    </div>
+  </div>
+
+  <!-- Additional content below the image section -->
+  <div class="h-screen bg-gray-200">
+    <p class="p-8">More content after the scroll effect...</p>
+  </div>
+
+  <div class="h-screen bg-gray-300">
+    <p class="p-8">Even more content...</p>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const image = document.querySelector('.scroll-opacity');
+      const contentContainer = document.querySelector('.content-container');
+      const scrollY = window.scrollY;
+      const maxScroll = (document.documentElement.scrollHeight - window.innerHeight) / 2; // Halve the scroll distance
+
+      const opacity = 1 - (scrollY / maxScroll);
+
+      // Ensure opacity does not go below 0
+      image.style.opacity = Math.max(opacity, 0);
+
+      // Make the text container visible as the image fades out
+      contentContainer.style.opacity = Math.min(1, scrollY / maxScroll);
+    });
+  </script>
+</body>
+</html>
