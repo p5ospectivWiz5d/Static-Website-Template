@@ -673,6 +673,34 @@ video {
   top: 1.5rem;
 }
 
+.left-5 {
+  left: 1.25rem;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.top-7 {
+  top: 1.75rem;
+}
+
+.top-8 {
+  top: 2rem;
+}
+
+.left-1 {
+  left: 0.25rem;
+}
+
+.top-3 {
+  top: 0.75rem;
+}
+
+.top-3\.5 {
+  top: 0.875rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -687,6 +715,10 @@ video {
 
 .m-4 {
   margin: 1rem;
+}
+
+.m-5 {
+  margin: 1.25rem;
 }
 
 .mx-auto {
@@ -734,6 +766,41 @@ video {
   display: none;
 }
 
+.size-1 {
+  width: 0.25rem;
+  height: 0.25rem;
+}
+
+.size-10 {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.size-5 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.size-8 {
+  width: 2rem;
+  height: 2rem;
+}
+
+.size-9 {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.size-7 {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.size-6 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .h-1 {
   height: 0.25rem;
 }
@@ -766,6 +833,11 @@ video {
   width: 100%;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -788,6 +860,10 @@ video {
 
 .cursor-ew-resize {
   cursor: ew-resize;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .resize {
@@ -814,8 +890,16 @@ video {
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .gap-x-6 {
@@ -893,6 +977,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -929,6 +1018,14 @@ video {
   padding: 2rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -959,6 +1056,14 @@ video {
   padding-bottom: 6rem;
 }
 
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -977,6 +1082,14 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
 }
 
 .font-bold {

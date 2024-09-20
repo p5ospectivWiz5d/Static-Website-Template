@@ -11,4 +11,22 @@ window.addEventListener('scroll', () => {
 
     // Make the text container visible as the image fades out
     contentContainer.style.opacity = Math.min(1, scrollY / maxScroll);
+}); 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const firstHamburger = document.getElementById('hamburgerBtn0');
+    const lastHamburger = document.getElementById('hamburgerBtn1');
+    const navbar = document.querySelector('.navbar');
+    
+    // Add event listener for button click
+    firstHamburger.addEventListener('click', function () {
+      navbar.classList.toggle('hidden'); // Toggle the 'hidden' class
+      lastHamburger.classList.remove('hidden'); // Toggle the 'hidden' class
+    });
+
+    // Add event listener for button click
+    lastHamburger.addEventListener('click', function () {
+        navbar.classList.toggle('hidden'); // Toggle the 'hidden' class
+        lastHamburger.classList.toggle('hidden'); // Toggle the 'hidden' class
+    });
 });
