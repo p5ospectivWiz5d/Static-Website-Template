@@ -20,13 +20,16 @@ document.addEventListener('DOMContentLoaded', function () {
     
     // Add event listener for button click
     firstHamburger.addEventListener('click', function () {
-      navbar.classList.toggle('hidden'); // Toggle the 'hidden' class
-      lastHamburger.classList.remove('hidden'); // Toggle the 'hidden' class
+        navbar.classList.remove('duration-500');
+        navbar.classList.add('translate-x-full');           
+        lastHamburger.classList.remove('hidden');
     });
 
     // Add event listener for button click
     lastHamburger.addEventListener('click', function () {
-        navbar.classList.toggle('hidden'); // Toggle the 'hidden' class
+        navbar.classList.remove('translate-x-full');
+        navbar.classList.add('translate-x-0');
+        navbar.classList.add('duration-500');
         lastHamburger.classList.toggle('hidden'); // Toggle the 'hidden' class
     });
 });

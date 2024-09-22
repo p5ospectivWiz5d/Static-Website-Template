@@ -6,32 +6,31 @@
   <link href="./output.css" rel="stylesheet">
   <script src="./script.js"></script>
 </head>
-<body>
+<body class="overflow-x-hidden">
   <!-- Image Container -->
   <div class="relative h-screen">
     <img src="https://picsum.photos/id/10/2500/1667" alt="Background Image" class="absolute w-full h-full object-cover scroll-opacity">    
 
     <!-- Content to replace the image -->
-    <div class="h-screen content-container text-white text-2xl font-bold bg-gray-300 p-8">
-       
-    </div>
+    <div class="h-screen content-container text-white text-2xl font-bold bg-[#09b063] p-8"></div>
 
     <!-- Hidden button -->
-    <button id="hamburgerBtn1" class="hidden sticky p-4 top-4 right-4 bg-opacity-75 bg-black rounded-full">
+    <button id="hamburgerBtn1" class="hidden sticky p-8 top-4 right-4 bg-opacity-75 bg-black rounded-full">
       <img src="../assests/images/icons8-hamburger-menu-50.png" class="cursor-pointer size-6 pt-1">
     </button>
+
     <!-- Navbar -->
-    <nav class="navbar sticky top-4 left-4 right-4 bg-opacity-75 bg-black text-white p-4 rounded-md">
-      <ul class="flex space-x-4">
+    <nav class="navbar sticky fixed top-4 left-4 right-4 bg-opacity-75 bg-black text-white p-4 rounded-md">
+      <ul class="flex space-x-4 p-4">
         <li>
-          <button id="hamburgerBtn0" class="">
+          <button id="hamburgerBtn0">
             <img src="../assests/images/icons8-hamburger-menu-50.png" class="cursor-pointer size-6 pt-1">
           </button>            
         </li>
-        <li><a href="#" class="hover:underline">Home</a></li>
-        <li><a href="#" class="hover:underline">About</a></li>
-        <li><a href="#" class="hover:underline">Services</a></li>
-        <li><a href="#" class="hover:underline">Contact</a></li>
+        <li><a href="#" class="hover:textShadow hover:-translate-y-1 transition duration-500 ease-in-out">Home</a></li>
+        <li><a href="#" class="hover:textShadow hover:-translate-y-1 transition duration-500 ease-in-out">About</a></li>
+        <li><a href="#" class="hover:textShadow hover:-translate-y-1 transition duration-500 ease-in-out">Services</a></li>
+        <li><a href="#" class="hover:textShadow hover:-translate-y-1 transition duration-500 ease-in-out">Contact</a></li>
       </ul>
     </nav>
   </div>

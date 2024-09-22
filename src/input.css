@@ -6,6 +6,12 @@
     transition: opacity 0.4s;
 }
 
+@layer utilities{
+  .textShadow {
+    text-shadow: -1.5px 1.5px 0 #09b063;
+  }
+};
+
 /* Ensure text appears smoothly */
 .content-container {
   position: absolute;
